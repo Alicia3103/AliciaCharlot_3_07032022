@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 <body>
-    <header><i class="fa-solid fa-arrow-left"></i> <img src="public/images/logo/ohmyfood.png" alt="logo"></header>
+    <header><img class="logo" src="./public/images/logo/ohmyfood.png" alt="logo"></header>
     <div class="localisation"><i class="fa-solid fa-location-dot"></i> Paris, Belleville</div>
     <div class="explications">
         <h1>Réservez le menu qui vous convient</h1>
         <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-        <button>Explorer nos restaurants</button>
+        <div class="explorer"><a href="#">Explorer nos restaurants</a></div>
     </div>
     <section id="Fonctionnement">
         <h1>Fonctionnement</h1>
@@ -40,8 +43,8 @@
           <div class="carte-restaurant">
             <a class="restaurant-lien" href="#">
               <div class="image-carte-restaurant">
-                <img src="/public/images/restaurants/LaPaletteDuGout.jpg" alt="restaurant-la-palette-du-gout" />
-                <p class="nouveau">Nouveau</p>
+                <img src="./public/images/restaurants/LaPaletteDuGout.jpg" alt="restaurant-la-palette-du-gout" />
+                <div class="nouveau">Nouveau</div>
               </div>
               <div class="corps-carte-restaurant">
                 <p class="titre-carte">La palette du goût</p>
@@ -55,12 +58,12 @@
           <div class="carte-restaurant">
             <a class="restaurant-lien" href="#">
               <div class="image-carte-restaurant">
-                <img src="/public/images/restaurants/LaPaletteDuGout.jpg" alt="restaurant-la-palette-du-gout" />
+                <img src="./public/images/restaurants/LaNoteEnchantee.jpg" alt="restaurant-la-note-enchantee" />
                 <p class="nouveau">Nouveau</p>
               </div>
               <div class="corps-carte-restaurant">
-                <p class="titre-carte">La palette du goût</p>
-                <p class="lieu">Ménilmontant</p>
+                <p class="titre-carte">La note enchantée</p>
+                <p class="lieu">Charone</p>
                 <p class="coeur">
                     <i class="fa-thin fa-heart"></i>
                 </p>
@@ -70,12 +73,12 @@
           <div class="carte-restaurant">
             <a class="restaurant-lien" href="#">
               <div class="image-carte-restaurant">
-                <img src="/public/images/restaurants/LaPaletteDuGout.jpg" alt="restaurant-la-palette-du-gout" />
+                <img src="./public/images/restaurants/ALaFrancaise.jpg" alt="restaurant-a-la-francaise" />
                 <p class="nouveau">Nouveau</p>
               </div>
               <div class="corps-carte-restaurant">
-                <p class="titre-carte">La palette du goût</p>
-                <p class="lieu">Ménilmontant</p>
+                <p class="titre-carte">A la française</p>
+                <p class="lieu">Cité Rouge</p>
                 <p class="coeur">
                     <i class="fa-thin fa-heart"></i>
                 </p>
@@ -85,12 +88,12 @@
           <div class="carte-restaurant">
             <a class="restaurant-lien" href="#">
               <div class="image-carte-restaurant">
-                <img src="/public/images/restaurants/LaPaletteDuGout.jpg" alt="restaurant-la-palette-du-gout" />
+                <img src="./public/images/restaurants/LeDeliceDesSens.jpg" alt="restaurant-le-delice-des-sens" />
                 <p class="nouveau">Nouveau</p>
               </div>
               <div class="corps-carte-restaurant">
-                <p class="titre-carte">La palette du goût</p>
-                <p class="lieu">Ménilmontant</p>
+                <p class="titre-carte">Le délice des sens</p>
+                <p class="lieu">Folie-Méricourt</p>
                 <p class="coeur">
                     <i class="fa-thin fa-heart"></i>
                 </p>
@@ -100,9 +103,9 @@
         </div>
     </section>
     <footer>
-        <img src="/public/images/logo/ohmyfood.png" alt="logo">
-        <p>Proposer un restaurant</p>
-        <p>Devenir partenaire</p>
+        <p>ohmyfood</p>
+        <p><i class="fa-solid fa-utensils"></i> Proposer un restaurant</p>
+        <p><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</p>
         <p>Mentions légales</p>
         <a href="mailto:">Contact</a>
     </footer>
