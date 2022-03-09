@@ -1,3 +1,5 @@
+@import "../utils/_variables";
+
 html {
     box-sizing: border-box;
   }
@@ -8,7 +10,7 @@ html {
   }
   
   body {
-    font-family: $text-police, sans-serif;
+    font-family: $text-police;
   
   }
   a {

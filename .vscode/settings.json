@@ -6,10 +6,7 @@
             "savePath": "/public/css"
         }
     ],
-    "liveSassCompile.settings.excludeList": [
-        "**/node_modules/**",
-        ".vscode/**"
-    ],
+
     "liveSassCompile.settings.generateMap": true,
     //autoprefix, will auto add perfix like -webkit- -moz-..
     "liveSassCompile.settings.autoprefix": [
