@@ -177,7 +177,7 @@
 }
 .carte_restaurant_image {
   position: relative;
-  height: 175px;
+  height: 174px;
   width: 100%;
 }
 .carte_restaurant_image img {
@@ -189,6 +189,7 @@
   border-top-right-radius: 20px;
 }
 .carte_restaurant_corps {
+  height: 76px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -201,11 +202,11 @@
 .carte_restaurant_titre {
   font-size: 16px;
   font-weight: bold;
-  padding: 20px 0 8px 4%;
+  padding: 18px 0 8px 4%;
 }
 .carte_restaurant_lieu {
   font-size: 14px;
-  padding: 0 0 20px 4%;
+  padding: 0 0 18px 4%;
 }
 .carte_restaurant .coeur {
   position: absolute;

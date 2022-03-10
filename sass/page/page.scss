@@ -112,7 +112,7 @@
      
  &_image {
      position:relative;
-     height: 175px;
+     height: 174px;
      width: 100%;
      
      img{
@@ -124,18 +124,19 @@
      }
  }
     &_corps{
-     position:relative;
-     display: flex;
-     flex-direction: column;
+        height: 76px;
+        position:relative;
+        display: flex;
+        flex-direction: column;
     }
      &_titre{
          font-size: 16px;
          font-weight: bold;
-         padding: 20px 0 8px 4%;
+         padding: 18px 0 8px 4%;
      }
      &_lieu{
          font-size: 14px;
-         padding: 0 0 20px 4%;
+         padding: 0 0 18px 4%;
      }
      .coeur{
          position: absolute;
