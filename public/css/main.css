@@ -37,6 +37,40 @@ a {
   background-color: #99e2d0;
 }
 
+.commander {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.commander_bouton {
+  height: 50px;
+  width: 190px;
+  font-size: 14px;
+  color: white;
+  border-radius: 25px;
+  -webkit-box-shadow: 5px 5px 12px #eaeaea;
+          box-shadow: 5px 5px 12px #eaeaea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
+  border: unset;
+  margin-top: 50px;
+}
+
 header {
   height: 63px;
   width: 100%;
@@ -104,6 +138,7 @@ main {
 
 .restaurant_image {
   height: 265px;
+  margin-bottom: -35px;
 }
 .restaurant_image img {
   -o-object-fit: cover;
@@ -114,10 +149,9 @@ main {
 
 .restaurant {
   position: relative;
-  background-color: white;
-  top: -40px;
+  background-color: #f6f6f6;
   width: 100%;
-  padding-top: 35px;
+  padding: 35px 0 80px 0;
   border-top-right-radius: 30px;
   border-top-left-radius: 30px;
 }
@@ -133,6 +167,60 @@ main {
   padding: 0 10% 0 5%;
 }
 
+.menu {
+  padding: 0 6%;
+}
+.menu h2 {
+  font-size: 16px;
+  font-weight: unset;
+  position: relative;
+  padding: 22px 0 10px 0;
+}
+.menu h2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 45px;
+  width: 40px;
+  border-bottom: 3px solid #99e2d0;
+}
+
+.menu_item {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  margin-top: 15px;
+  -webkit-box-shadow: 5px 5px 12px #eaeaea;
+          box-shadow: 5px 5px 12px #eaeaea;
+  border-radius: 20px;
+  background-color: white;
+}
+.menu_item h3 {
+  font-size: 16px;
+  padding: 15px 19% 4px 3%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.menu_item_accompagnements {
+  font-size: 14px;
+  padding: 4px 19% 14px 3%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.menu_item_prix {
+  position: absolute;
+  right: 6%;
+  bottom: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.menu_item_validation {
+  display: none;
+}
+
 .localisation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -145,6 +233,8 @@ main {
           align-items: center;
   height: 50px;
   font-size: 16px;
+  -webkit-box-shadow: inset 0 20px 10px -20px #353535;
+          box-shadow: inset 0 20px 10px -20px #353535;
   background-color: #eaeaea;
   color: #383838;
 }
