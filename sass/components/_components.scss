@@ -1,33 +1,104 @@
 @import "../utils/_variables";
 @import"../utils/mixins";
+@import"../utils/fonctions";
 
-.nouveau{
-    position:absolute;
-    top:13px;
-    right:11px;
+.nouveau {
+    position: absolute;
+    top: 13px;
+    right: 11px;
     height: 30px;
     width: 80px;
     border-radius: 3px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color:#119071;
-    background-color:$color-tertiary;
+    color: #119071;
+    background-color: $color-tertiary;
 
 }
-.commander{
+
+.commander {
     @include flex-center;
-    &_bouton{
-    height:50px;
-    width: 190px;
-    font-size: 14px; 
-    color: white;
-    border-radius: 25px;
-    box-shadow: 5px 5px 12px #eaeaea;
+
+    &_bouton {
+        height: 50px;
+        width: 190px;
+        font-size: 14px;
+        color: white;
+        border-radius: 25px;
+        box-shadow: 5px 5px 12px #eaeaea;
+        @include flex-center;
+        @include gradient;
+        border: unset;
+        margin-top: 50px;
+    }
+}
+
+.menu_item_prix {
+    font-weight: bold;
     @include flex-center;
-    @include gradient;
-    border: unset;
-    margin-top:50px;
+}
+
+.prix {
+    font-size: 14px;
+    font-weight: bold;
+    @include flex-center;
+    padding: 0 20px 0 15px;
+}
+
+.menu_item_prix:hover {
+
+    .prix{
+    -webkit-animation: slide-left 0.5s linear both;
+    animation: slide-left 0.5s linear both;}
+
+
+    .menu_item_validation {
+        display: unset;
+        @include flex-center;
+        width: 60px;
+        height: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        border-radius: 0 20px 20px 0;
+        background-color: $color-tertiary;
+        color: white;
+        -webkit-animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	    animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    
+    
+    }
+}
+
+.menu_item_validation {
+    display: none;
+}
+
+.coeur {
+    .fa-regular {
+        position: relative;
+        z-index: 1;
+    }
+
+    .fa-solid {
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+.coeur:hover {
+    .fa-regular {
+        position: absolute;
+        z-index: -1;
+    }
+
+    .fa-solid {
+        position: relative;
+        z-index: 1;
+        @include gradient;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: heart-scale 300ms cubic-bezier(0.5, 1, 0.89, 1) 0s 1 normal forwards;
     }
 
 }
