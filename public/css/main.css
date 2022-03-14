@@ -37,6 +37,40 @@ a {
   background-color: #99e2d0;
 }
 
+.commander {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.commander_bouton {
+  height: 50px;
+  width: 190px;
+  font-size: 14px;
+  color: white;
+  border-radius: 25px;
+  -webkit-box-shadow: 5px 5px 12px #eaeaea;
+          box-shadow: 5px 5px 12px #eaeaea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
+  border: unset;
+  margin-top: 50px;
+}
+
 header {
   height: 63px;
   width: 100%;
@@ -98,6 +132,95 @@ footer {
   padding-bottom: 10px;
 }
 
+main {
+  position: relative;
+}
+
+.restaurant_image {
+  height: 265px;
+  margin-bottom: -35px;
+}
+.restaurant_image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.restaurant {
+  position: relative;
+  background-color: #f6f6f6;
+  width: 100%;
+  padding: 35px 0 80px 0;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+}
+.restaurant h1 {
+  font-family: Shrikhand, sans-serif;
+  font-size: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10% 0 5%;
+}
+
+.menu {
+  padding: 0 6%;
+}
+.menu h2 {
+  font-size: 16px;
+  font-weight: unset;
+  position: relative;
+  padding: 22px 0 10px 0;
+}
+.menu h2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 45px;
+  width: 40px;
+  border-bottom: 3px solid #99e2d0;
+}
+
+.menu_item {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  margin-top: 15px;
+  -webkit-box-shadow: 5px 5px 12px #eaeaea;
+          box-shadow: 5px 5px 12px #eaeaea;
+  border-radius: 20px;
+  background-color: white;
+}
+.menu_item h3 {
+  font-size: 16px;
+  padding: 15px 19% 4px 3%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.menu_item_accompagnements {
+  font-size: 14px;
+  padding: 4px 19% 14px 3%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.menu_item_prix {
+  position: absolute;
+  right: 6%;
+  bottom: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.menu_item_validation {
+  display: none;
+}
+
 .localisation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -110,6 +233,8 @@ footer {
           align-items: center;
   height: 50px;
   font-size: 16px;
+  -webkit-box-shadow: inset 0 20px 10px -20px #353535;
+          box-shadow: inset 0 20px 10px -20px #353535;
   background-color: #eaeaea;
   color: #383838;
 }
@@ -277,7 +402,7 @@ footer {
 }
 .carte_restaurant_image {
   position: relative;
-  height: 175px;
+  height: 174px;
   width: 100%;
 }
 .carte_restaurant_image img {
@@ -289,6 +414,7 @@ footer {
   border-top-right-radius: 20px;
 }
 .carte_restaurant_corps {
+  height: 76px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -301,11 +427,89 @@ footer {
 .carte_restaurant_titre {
   font-size: 16px;
   font-weight: bold;
-  padding: 20px 0 8px 4%;
+  padding: 18px 0 8px 4%;
 }
 .carte_restaurant_lieu {
   font-size: 14px;
-  padding: 0 0 20px 4%;
+  padding: 0 0 18px 4%;
+}
+.carte_restaurant .coeur {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+#restaurants {
+  background-color: #f6f6f6;
+}
+#restaurants h1 {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 60px 0 28px 6%;
+}
+
+.cartes_restaurants {
+  width: 100%;
+  background-color: #f6f6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carte_restaurant {
+  height: 250px;
+  width: 88%;
+  margin-bottom: 18px;
+  -webkit-box-shadow: 5px 5px 12px #eaeaea;
+          box-shadow: 5px 5px 12px #eaeaea;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.carte_restaurant_image {
+  position: relative;
+  height: 174px;
+  width: 100%;
+}
+.carte_restaurant_image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.carte_restaurant_corps {
+  height: 76px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.carte_restaurant_titre {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 18px 0 8px 4%;
+}
+.carte_restaurant_lieu {
+  font-size: 14px;
+  padding: 0 0 18px 4%;
 }
 .carte_restaurant .coeur {
   position: absolute;
