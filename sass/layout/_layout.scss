@@ -91,9 +91,17 @@ main {
         padding: 0 10% 0 5%
     }
 }
+.menu_entrees{
+    animation: Fade-in 500ms ease 100ms 1 normal forwards;
+}
+.menu_plats{
+    animation: Fade-in 500ms ease 200ms 1 normal forwards;
+}
+.menu_desserts{
+    animation: Fade-in 500ms ease 300ms 1 normal forwards;
+}
 
 .menu {
-
     padding: 0 6%;
 
     h2 {

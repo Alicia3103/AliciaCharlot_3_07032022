@@ -90,8 +90,13 @@
 .menu_item_prix {
     font-weight: bold;
     @include flex-center;
+    
 }
-
+.menu_item_validation {
+    white-space: nowrap;
+        overflow: hidden;
+    width: 0;
+}
 .prix {
     font-size: 14px;
     font-weight: bold;
@@ -101,14 +106,11 @@
 
 .menu_item_prix:hover {
 
-    .prix {
-        -webkit-animation: slide-left 0.5s linear both;
-        animation: slide-left 0.5s linear both;
+    .prix {    
+        animation: slide-left 0.5s alternate linear both;
     }
-
-
     .menu_item_validation {
-
+       
         @include flex-center;
         width: 60px;
         height: 100%;
@@ -117,23 +119,14 @@
         border-radius: 0 20px 20px 0;
         background-color: $color-tertiary;
         color: white;
-        -webkit-animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-
-
+    }
+    .fa-circle-check{
+        animation: rotate-center 0.3s linear 100ms both;
     }
 }
 
-.menu_item_validation {
-    /* height: 100%;
-    border-radius: 0 20px 20px 0;
-    background-color: $color-tertiary;
-        color: white;
-        @include flex-center;
-    -webkit-animation: scale-out-hor-right 0.5s linear forwards;
-	        animation: scale-out-hor-right 0.5s linear forwards;*/
-    display: none;
-}
+
 
 .coeur {
     .fa-regular {
