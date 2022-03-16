@@ -156,3 +156,19 @@
     }
 
 }
+.commander{
+    @include flex-center;
+    &_bouton{
+    height:50px;
+    width: 190px;
+    font-size: 14px; 
+    color: white;
+    border-radius: 25px;
+    box-shadow: 5px 5px 12px #eaeaea;
+    @include flex-center;
+    @include gradient;
+    border: unset;
+    margin-top:50px;
+    }
+
+}
