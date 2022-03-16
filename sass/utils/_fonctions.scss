@@ -1,3 +1,8 @@
+ /**
+ * ----------------------------------------
+ * animation COEUR
+ * ----------------------------------------
+ */
 @keyframes heart-scale {
     0% {
       transform: scale(0.5);
@@ -7,6 +12,11 @@
       transform: scale(1);
     }
   }
+  /**
+ * ----------------------------------------
+ * animation PRIX
+ * ----------------------------------------
+ */
   @-webkit-keyframes slide-left {
     0% {
       -webkit-transform: translateX(60px);
@@ -29,23 +39,10 @@
   }
   /**
  * ----------------------------------------
- * animation scale-in-hor-right
+ * animation VALIDATION
  * ----------------------------------------
  */
-@-webkit-keyframes scale-in-hor-right {
-  0% {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-    -webkit-transform-origin: 100% 100%;
-            transform-origin: 100% 100%;
-  }
-  100% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-    -webkit-transform-origin: 100% 100%;
-            transform-origin: 100% 100%;
-  }
-}
+
 @keyframes scale-in-hor-right {
   0% {
     -webkit-transform: scaleX(0);
@@ -61,16 +58,7 @@
   }
 }
 
-  @-webkit-keyframes rotate-center {
-    0% {
-      -webkit-transform: rotate(0);
-              transform: rotate(0);
-    }
-    100% {
-      -webkit-transform: rotate(360deg);
-              transform: rotate(360deg);
-    }
-  }
+  
   @keyframes rotate-center {
     0% {
       -webkit-transform: rotate(0);
@@ -92,4 +80,46 @@
       transform: scale(1);
     }
   }
- 
+ /**
+ * ----------------------------------------
+ * animation LOADER
+ * ----------------------------------------
+ */
+ @keyframes Scale-loader {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes Spin-loader_cercle {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes Scale-loader_point {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.5);
+  }
+}
+@keyframes fade-out-page_loader {
+  0% {
+    opacity: 0.9;
+    transform: scale(1);
+    
+  }
+75%{
+  opacity: 0;
+  transform: scale(1);
+}
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
