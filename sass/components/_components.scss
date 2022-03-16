@@ -95,7 +95,11 @@
 .menu_item_validation {
     white-space: nowrap;
     overflow: hidden;
-    width: 0;
+    .fa-circle-check{
+    white-space: nowrap;
+    overflow: hidden;
+    display: none;
+    } 
 }
 .prix {
     font-size: 14px;
@@ -119,9 +123,10 @@
         border-radius: 0 20px 20px 0;
         background-color: $color-tertiary;
         color: white;
-        animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0s 1 alternate  ;
     }
     .fa-circle-check{
+        display: unset;
         animation: rotate-center 0.3s linear 100ms both;
     }
 }

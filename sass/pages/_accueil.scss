@@ -14,16 +14,21 @@
     margin-right: 18px;
 }
 
-#Fonctionnement {
+#fonctionnement {
     display: flex;
     flex-direction: column;
 
-    h1 {
+   h1 {
         font-size: 20px;
         font-weight: bold;
         padding: 50px 0 30px 6%;
     }
 
+}
+.bloc_fonctionnement{
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .fonctionnement_etape {
@@ -53,9 +58,12 @@
 
     .fa-solid {
         position: absolute;
-        top: 24px;
+        top: 25px;
         left: 10%;
         color: #909090
+    }
+    p{
+        margin-left: 35px;
     }
 
     &:hover {
