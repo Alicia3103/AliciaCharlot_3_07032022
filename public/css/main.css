@@ -196,7 +196,7 @@
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  75% {
+  99% {
     opacity: 0;
     -webkit-transform: scale(1);
             transform: scale(1);
@@ -213,7 +213,7 @@
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  75% {
+  99% {
     opacity: 0;
     -webkit-transform: scale(1);
             transform: scale(1);
@@ -365,7 +365,7 @@ a {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  75% {
+  99% {
     opacity: 0;
     -webkit-transform: scale(1);
             transform: scale(1);
@@ -508,7 +508,11 @@ a {
 .menu_item_validation {
   white-space: nowrap;
   overflow: hidden;
-  width: 0;
+}
+.menu_item_validation .fa-circle-check {
+  white-space: nowrap;
+  overflow: hidden;
+  display: none;
 }
 
 .prix {
@@ -547,10 +551,11 @@ a {
   border-radius: 0 20px 20px 0;
   background-color: #99e2d0;
   color: white;
-  -webkit-animation: scale-in-hor-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-          animation: scale-in-hor-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: scale-in-hor-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s 1 alternate;
+          animation: scale-in-hor-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s 1 alternate;
 }
 .menu_item_prix:hover .fa-circle-check {
+  display: unset;
   -webkit-animation: rotate-center 0.3s linear 100ms both;
           animation: rotate-center 0.3s linear 100ms both;
 }
@@ -757,7 +762,7 @@ a {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  75% {
+  99% {
     opacity: 0;
     -webkit-transform: scale(1);
             transform: scale(1);
@@ -826,6 +831,10 @@ footer {
 }
 
 .footer_mention {
+  padding-bottom: 10px;
+}
+
+.footer_contact {
   padding-bottom: 10px;
 }
 
@@ -958,7 +967,7 @@ main {
   margin-right: 18px;
 }
 
-#Fonctionnement {
+#fonctionnement {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -967,10 +976,20 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-#Fonctionnement h1 {
+#fonctionnement h1 {
   font-size: 20px;
   font-weight: bold;
   padding: 50px 0 30px 6%;
+}
+
+.bloc_fonctionnement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .fonctionnement_etape {
@@ -1017,9 +1036,12 @@ main {
 }
 .fonctionnement_etape .fa-solid {
   position: absolute;
-  top: 24px;
+  top: 25px;
   left: 10%;
   color: #909090;
+}
+.fonctionnement_etape p {
+  margin-left: 35px;
 }
 .fonctionnement_etape:hover {
   background-color: #f5edff;
@@ -1135,80 +1157,158 @@ main {
   right: 24px;
 }
 
-#restaurants {
-  background-color: #f6f6f6;
-}
-#restaurants h1 {
-  font-size: 20px;
-  font-weight: bold;
-  padding: 60px 0 28px 6%;
-}
+/* -------TABLET--------*/
+@media screen and (min-width: 769px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 6%;
+    background-color: #353535;
+    color: white;
+    font-size: 14px;
+  }
+  footer .footer_logo {
+    padding: 0 0 10px 0;
+  }
 
-.cartes_restaurants {
-  width: 100%;
-  background-color: #f6f6f6;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
+  #restaurants {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #restaurants h1 {
+    padding-left: 0;
+  }
 
-.carte_restaurant {
-  height: 250px;
-  width: 88%;
-  margin-bottom: 18px;
-  -webkit-box-shadow: 5px 5px 12px #eaeaea;
-          box-shadow: 5px 5px 12px #eaeaea;
-  border-radius: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  .cartes_restaurants {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 88%;
+    max-width: 1000px;
+    padding: 0 6%;
+  }
+  .cartes_restaurants .carte_restaurant {
+    width: 48%;
+  }
+
+  #fonctionnement {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #fonctionnement h1 {
+    padding-left: 0;
+  }
+
+  .bloc_fonctionnement {
+    width: 88%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 6%;
+  }
+
+  .fonctionnement_etape {
+    width: 32%;
+    margin: 11px 0 11px 0;
+    font-size: 15px;
+  }
+
+  .restaurant {
+    padding: 35px 10% 80px 10%;
+    width: 80%;
+  }
 }
-.carte_restaurant_image {
-  position: relative;
-  height: 174px;
-  width: 100%;
-}
-.carte_restaurant_image img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: 100%;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-}
-.carte_restaurant_corps {
-  height: 76px;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.carte_restaurant_titre {
-  font-size: 16px;
-  font-weight: bold;
-  padding: 18px 0 8px 4%;
-}
-.carte_restaurant_lieu {
-  font-size: 14px;
-  padding: 0 0 18px 4%;
-}
-.carte_restaurant .coeur {
-  position: absolute;
-  top: 24px;
-  right: 24px;
+/* -------DESKTOP--------*/
+@media screen and (min-width: 992px) {
+  .carte {
+    padding: 0 6%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .carte .menu {
+    width: 30%;
+    padding: unset;
+  }
+
+  #restaurants {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #restaurants h1 {
+    padding-left: 0;
+  }
+
+  .cartes_restaurants {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 88%;
+    max-width: 1000px;
+    padding: 0 6%;
+  }
+  .cartes_restaurants .carte_restaurant {
+    width: 48%;
+  }
+
+  .fonctionnement_etape {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=main.css.map */
