@@ -11,17 +11,25 @@
 .fa-location-dot{
     margin-right:18px ;
 }
-#Fonctionnement{
+
+#fonctionnement {
     display: flex;
     flex-direction: column;
-    h1{
+
+   h1 {
         font-size: 20px;
         font-weight: bold;
         padding:50px 0 30px 6%;
     }
     
 }
-.fonctionnement_etape{
+.bloc_fonctionnement{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.fonctionnement_etape {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -47,11 +55,15 @@
     }
     .fa-solid{
         position: absolute;
-        top:24px;
-        left:10%;
-        color:#909090
+        top: 25px;
+        left: 10%;
+        color: #909090
     }
-    &:active {
+    p{
+        margin-left: 35px;
+    }
+
+    &:hover {
         background-color: #f5edff;
         .fa-solid{
             color: $color-primary;
