@@ -1,10 +1,13 @@
-@import "../utils/_variables";
+
+
 @mixin gradient {
-    background:linear-gradient( $color-secondary,$color-primary)
+    background: linear-gradient($color-secondary, $color-primary)
 }
+
 @mixin gradient-light {
-    background:linear-gradient( $color-secondary-light,$color-primary-light)
+    background: linear-gradient($color-secondary-light, $color-primary-light)
 }
+
 @mixin flex-center {
     display: flex;
     justify-content: center;

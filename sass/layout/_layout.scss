@@ -1,7 +1,4 @@
-@import "../utils/_variables";
-@import"../utils/mixins";
-@import"../utils/fonctions";
-@import"../utils/placeholder";
+
 
 header {
     height: 63px;
@@ -12,6 +9,7 @@ header {
 
     .logo {
         height: 29px;
+        width: 167px;
 
     }
 
@@ -25,6 +23,7 @@ header {
 
 footer {
     height: 200px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     padding-left: 6%;
@@ -34,38 +33,48 @@ footer {
 }
 
 .footer_logo {
-    font-family: $title-police;
+    font-family: hrikhand,sans-serif;
     font-size: 16px;
     padding: 25px 0 22px 0;
 
 }
 
 .footer_proposer {
+    width: 80%;
+    height: 24px;
     padding-bottom: 10px;
 
     .fa-utensils {
+        width: 20px;
+        height: 20px;
         margin-right: 10px
     }
 }
 
 .footer_partenaire {
+    width: 80%;
+    height: 24px;
     padding-bottom: 10px;
 
     .fa-handshake-angle {
+        width: 20px;
+        height: 20px;
         margin-right: 10px
     }
 }
 
 .footer_mention {
-    padding-bottom: 10px;
-}
-.footer_contact {
+    width: 80%;
+    height: 24px;
     padding-bottom: 10px;
 }
 
-main {
-    position: relative;
+.footer_contact {
+    width: 80%;
+    height: 24px;
+    padding-bottom: 10px;
 }
+
 
 .restaurant_image {
     height: 265px;
@@ -86,7 +95,7 @@ main {
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
 
-    h1 {
+    &_nom {
         font-family: $title-police;
         font-size: 22px;
         display: flex;
@@ -94,13 +103,16 @@ main {
         padding: 0 10% 0 5%
     }
 }
-.menu_entrees{
+
+.menu_entrees {
     animation: Fade-in 500ms ease 200ms 1 normal forwards;
 }
-.menu_plats{
+
+.menu_plats {
     animation: Fade-in 500ms ease 400ms 1 normal forwards;
 }
-.menu_desserts{
+
+.menu_desserts {
     animation: Fade-in 500ms ease 600ms 1 normal forwards;
 }
 
@@ -147,7 +159,7 @@ main {
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
-        
+
     }
 
     &_accompagnements {
@@ -156,7 +168,7 @@ main {
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
-        
+
     }
-    
+
 }

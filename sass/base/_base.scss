@@ -1,19 +1,30 @@
-@import "../utils/_variables";
+
+
+
+/*--------BASE-----*/
 
 html {
-    box-sizing: border-box;
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: $text-police;
-  
-  }
-  a {
-    color: inherit;
-    text-decoration: unset;
-  }
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $text-police;
+
+}
+
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: unset;
+}

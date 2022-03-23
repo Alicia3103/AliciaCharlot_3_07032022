@@ -1,6 +1,4 @@
-@import "../utils/_variables";
-@import"../utils/mixins";
-@import"../utils/fonctions";
+
 
 .nouveau {
     position: absolute;
@@ -90,42 +88,56 @@
 .menu_item_prix {
     font-weight: bold;
     @include flex-center;
+      
+   
+
+    .menu_item_validation {
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: $color-tertiary;
+     color: white;
+
+  
     
-}
-.menu_item_validation {
-    white-space: nowrap;
-    overflow: hidden;
-    .fa-circle-check{
-    white-space: nowrap;
-    overflow: hidden;
-    display: none;
-    } 
-}
-.prix {
+
+        .fa-circle-check {
+        white-space: nowrap;
+        overflow: hidden;
+        display: none;
+     }
+    }
+
+    .prix {
     font-size: 14px;
     font-weight: bold;
     @include flex-center;
     padding: 0 20px 0 15px;
+    }
 }
 
-.menu_item_prix:hover {
-
-    .prix {    
-        animation: slide-left 0.5s alternate linear ;
+.menu_item:hover {
+    .menu_item_prix{
+        width: 120px;
     }
-    .menu_item_validation {
-       
-        @include flex-center;
+    .prix {
+        animation: slide-left 0.5s alternate linear;
         width: 60px;
+    }
+
+    .menu_item_validation {
+
+        @include flex-center;
+        width:60px;
         height: 100%;
         white-space: nowrap;
         overflow: hidden;
         border-radius: 0 20px 20px 0;
         background-color: $color-tertiary;
         color: white;
-        animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0s 1 alternate  ;
+        animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0s 1 alternate;
     }
-    .fa-circle-check{
+
+    .fa-circle-check {
         display: unset;
         animation: rotate-center 0.3s linear 100ms both;
     }
@@ -134,12 +146,17 @@
 
 
 .coeur {
+     
     .fa-regular {
+        width: 20px;
+        height: 20px;
         position: relative;
         z-index: 1;
     }
 
     .fa-solid {
+        width: 20px;
+        height: 20px;
         position: absolute;
         z-index: -1;
     }
@@ -161,19 +178,21 @@
     }
 
 }
-.commander{
+
+.commander {
     @include flex-center;
-    &_bouton{
-    height:50px;
-    width: 190px;
-    font-size: 14px; 
-    color: white;
-    border-radius: 25px;
-    box-shadow: 5px 5px 12px #eaeaea;
-    @include flex-center;
-    @include gradient;
-    border: unset;
-    margin-top:50px;
+
+    &_bouton {
+        height: 50px;
+        width: 190px;
+        font-size: 14px;
+        color: white;
+        border-radius: 25px;
+        box-shadow: 5px 5px 12px #eaeaea;
+        @include flex-center;
+        @include gradient;
+        border: unset;
+        margin-top: 50px;
     }
 
 }
