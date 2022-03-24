@@ -1,7 +1,52 @@
 /* -------TABLET--------*/
 @media screen and (min-width: 769px) {
 
-
+    
+    
+    .footer_logo {
+        width: auto;
+        height: 24px;
+        font-family: shrikhand,sans-serif;
+        font-size: 16px;
+        padding: 25px 0 22px 0;
+    
+    }
+    
+    .footer_proposer {
+        width: auto;
+        height: 24px;
+        padding-bottom: 10px;
+    
+        .fa-utensils {
+            width: 20px;
+            height: 20px;
+            margin-right: 0
+        }
+    }
+    
+    .footer_partenaire {
+        width: auto;
+        height: 24px;
+        padding-bottom: 10px;
+    
+        .fa-handshake-angle {
+            width: 20px;
+            height: 20px;
+            margin-right: 0
+        }
+    }
+    
+    .footer_mention {
+        width: auto;
+        height: 24px;
+        padding-bottom: 10px;
+    }
+    
+    .footer_contact {
+        width: auto;
+        height: 24px;
+        padding-bottom: 10px;
+    }
 
     footer {
 
