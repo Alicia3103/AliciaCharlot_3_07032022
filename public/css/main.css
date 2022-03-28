@@ -937,7 +937,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: center;
+  justify-content: center;
   width: 80%;
   height: 72px;
   font-size: 24px;
